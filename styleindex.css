@@ -1,0 +1,121 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+body{
+    background-color:#a9dfeb;
+    font-family: 'Poppins', serif;
+}
+h2{
+  font-size: 250%;
+  color: #f56342;
+  padding: 1em 0em 0em;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top:0%;
+    background-color: rgba(0,0,0,0.4);
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+  }
+#navbar ul{
+    display: flex;
+    margin:10px;
+}
+#navbar ul li{
+    cursor: pointer;
+    padding:25px;
+    position: relative;
+    left:60px;
+    color:white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    text-decoration: none;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:0px 200px;
+    justify-content: center;
+    align-items: center;
+    min-height: 20em;
+}
+#home h1{
+    color:yellow;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#home p{
+    color:black;
+    text-align: ;
+    font-size: 1rem;
+}
+/* utility classes */
+.advice{
+    width: 90%;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+    margin: 3em 0;
+    place-items: center;
+}
+.adviceBig{
+    width: 90%;
+    display: grid;
+    height: auto;
+    gap: 2em;
+    margin: 3em 0;
+    place-items: center;
+}
+.sticky{
+    width: calc(100% - 3em);
+    display: flex;
+    justify-content: cen
+    align-items: center;
+    background-color: #faf570;
+    padding: 1em 2em;
+    flex-direction: column;
+}
+.sticky p{
+  padding-top: 1em;
+  font-family: Patrick Hand;
+  font-size: 18px;
+}
+.sticky h1{
+  font-size: 1em;
+}
+.sticky h2{
+  text-align: right;
+  font-size: 80%;
+  color:#617178;
+}
+.bigSticky h2{
+  text-align: right;
+  font-size: 80%;
+  color:#617178;
+}
+.advice-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
