@@ -11,28 +11,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <style>
-    img {
-      width: 7%;
-      padding-left: 1em;
-      margin-right: -4em;
-    }
-</style>
+      img {
+        width: 7%;
+        padding-left: 1em;
+        margin-right: -4em;
+      }
+      ul {
+        align-items: center;
+      }
+      @media (max-width: 767px) {
+        .advice {
+          display: flex;
+          flex-direction: column;
+        }
+        .advice-container h2 {
+          padding: 1rem;
+          font-size: 1.5rem;
+        }
+        img {
+          width: 67px;
+          object-fit: cover;
+          padding: 0;
+          margin-right: 0;
+        }
+        #navbar ul li {
+          padding: 0;
+          left: -7px;
+          font-size: 0.8rem;
+          text-align: center;
+        }
+        .h-primary{
+          font-size: 4rem;
+        }
+        #home{
+        padding: 0;
+
+        }
+        #home p{
+          font-size: 1.4rem;
+        }
+      }
+
+    </style>
 </head>
 <body>
   <div id="section-1">
-      <div id="navbar">
-          <ul>
-              <img src="icon.png" alt="notepad icon">
-              <li class="list"><a href="index.html">Home</a></li>
-              <li class="list"><a href="AdvicePage.html">Senior Advice</a></li>
-              <li class="list"><a href="About.html">About</a></li>
-          </ul>
-      </div>
+    <div id="navbar">
+      <img src="icon.png" alt="notepad icon" />
+      <ul>
+        <li class="list"><a href="index.html">Home</a></li>
+        <li class="list"><a href="AdvicePage.html">Senior Advice</a></li>
+        <li class="list"><a href="About.html">About</a></li>
+      </ul>
+    </div>
   </div>
 
     <section id="home">
       <h1 class="h-primary">FHS Senior Advice Page 2021</h1>
-      <h2>
       <p></p>
     </section>
 
