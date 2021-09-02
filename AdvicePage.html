@@ -1,45 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleindex.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleindex.css" />
     <title>Advice</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
     <style>
-    img {
-      width: 7%;
-      padding-left: 1em;
-      margin-right: -4em;
-    }
-</style>
-</head>
-<body>
-  <div id="section-1">
+      img {
+        width: 7%;
+        padding-left: 1em;
+        margin-right: -4em;
+      }
+      ul {
+        align-items: center;
+      }
+      @media (max-width: 767px) {
+        .advice {
+          display: flex;
+          flex-direction: column;
+        }
+        .advice-container h2 {
+          padding: 1rem;
+          font-size: 1.5rem;
+        }
+        img {
+          width: 67px;
+          object-fit: cover;
+          padding: 0;
+          margin-right: 0;
+        }
+        #navbar ul li {
+          padding: 0;
+          left: -7px;
+          font-size: 0.8rem;
+          text-align: center;
+        }
+        .sticky h2{
+          text-align: right;
+          font-size: .7em;
+        }
+      }
+      @media (max-width: 768px) {
+        .oness:active {
+          transform: scale(1.2);
+          margin-left: 0;
+        }
+        .one:active {
+          transform: scale(1.2);
+        }
+        .ones:active {
+          transform: scale(1.2);
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="section-1">
       <div id="navbar">
-          <ul>
-              <img src="icon.png" alt="notepad icon">
-              <li class="list"><a href="index.html">Home</a></li>
-              <li class="list"><a href="AdvicePage.html">Senior Advice</a></li>
-              <li class="list"><a href="About.html">About</a></li>
-          </ul>
+        <img src="icon.png" alt="notepad icon" />
+        <ul>
+          <li class="list"><a href="index.html">Home</a></li>
+          <li class="list"><a href="AdvicePage.html">Senior Advice</a></li>
+          <li class="list"><a href="About.html">About</a></li>
+        </ul>
       </div>
-  </div>
-  <main class="advice-container">
-
-      <h2><span>What I wish I knew before my first year at FHS</span></h2>
+    </div>
+    <main class="advice-container">
+      <h2><span>What we wish we knew before our first year at FHS</span></h2>
           <section class="advice">
-                      <div class="sticky">
-                          <p>I wish I was not as nervous about going into High-school!!! I know thats a very stereotypical thing to say, but, I promise the high-school isn't as intimidating as it seems! </p>
-                          <h2>-Issy Baumann</h2>
-                      </div>
-              <!-- sticky note-->
+
                       <div class="sticky">
                           <p>Don’t stress your self out about grades and test scores so much. They matter of course, but putting unneeded pressure on yourself will only make it worse. As long as you try your best, there is literally nothing else you can do.
 
@@ -50,6 +93,12 @@
                       <div class="sticky">
                           <p>If you are considering the STEM/Art endorsement, start thinking about it soon. I was planning on getting the STEM one, but by the time I thought about it I was too far behind.</p>
                           <h2>-Ash Lane</h2>
+                      </div>
+              <!-- sticky note-->
+              <!-- sticky note-->
+                      <div class="sticky">
+                          <p>I wish I was not as nervous about going into High-school!!! I know thats a very stereotypical thing to say, but, I promise the high-school isn't as intimidating as it seems! </p>
+                          <h2>-Issy Baumann</h2>
                       </div>
               <!-- sticky note-->
                       <div class="sticky">
@@ -69,17 +118,6 @@
                             <h2>-Seth Warner</h2>
                         </div>
               <!-- sticky note-->
-            </section>
-              <!-- sticky note-->
-              <section class="adviceBig">
-                        <div class="sticky">
-                        <p> Honors classes aren’t as challenging as you think! I feel like middle school teachers made honors classes seem like these very scary and much higher level classes and that discouraged a lot of people from taking them. The intensity of honors classes all depend on the teacher, the subject, and your overall interest in the subject. In my experience the more I like a subject the more work I am willing to put into it. So if there is a subject you really don’t like and have trouble focusing during you don’t have to take an honors level! For example, I really don’t like history it is very boring to me and I usually avoid studying for the tests until the last minute because the subjects never interest me. So I didn’t take honors history and I instead took honors level courses and eventually AP for courses that did actually interest me. That being said though honors are not everything. It is better to succeed  in an CP class than to struggle in an honors class. I know it is early but I also know some are already thinking about what to do to look good for colleges and my best advice is to just focus on yourself. Don’t take honors or AP classes that you know you will heavily struggle with just to be able to say you took them. Because surprise surprise colleges would rather see As and Bs in CP classes than Cs and below in honor classes!! And if you are unsure if you can handle the honors course start with CP, if you find it is too easy you can always move up!
-                        </p>
-                            <h2>-Anonymous</h2>
-                        </div>
-              <!-- sticky note-->
-            </section>
-            <section class="advice">
               <!-- sticky note-->
                         <div class="sticky">
                             <p>I wish I knew that trying to conform to Falmouth’s environment and social standards isn’t always the way to go. Learning to express yourself and not caring what people think is much more important </p>
@@ -98,6 +136,17 @@
                             <h2>-Natalie Glockler</h2>
                         </div>
               <!-- sticky note-->
+            </section>
+              <!-- sticky note-->
+              <section class="adviceBig">
+                        <div class="sticky">
+                        <p> Honors classes aren’t as challenging as you think! I feel like middle school teachers made honors classes seem like these very scary and much higher level classes and that discouraged a lot of people from taking them. The intensity of honors classes all depend on the teacher, the subject, and your overall interest in the subject. In my experience the more I like a subject the more work I am willing to put into it. So if there is a subject you really don’t like and have trouble focusing during you don’t have to take an honors level! For example, I really don’t like history it is very boring to me and I usually avoid studying for the tests until the last minute because the subjects never interest me. So I didn’t take honors history and I instead took honors level courses and eventually AP for courses that did actually interest me. That being said though honors are not everything. It is better to succeed  in an CP class than to struggle in an honors class. I know it is early but I also know some are already thinking about what to do to look good for colleges and my best advice is to just focus on yourself. Don’t take honors or AP classes that you know you will heavily struggle with just to be able to say you took them. Because surprise surprise colleges would rather see As and Bs in CP classes than Cs and below in honor classes!! And if you are unsure if you can handle the honors course start with CP, if you find it is too easy you can always move up!
+                        </p>
+                            <h2>-Anonymous</h2>
+                        </div>
+              <!-- sticky note-->
+            </section>
+            <section class="advice">
               <!-- sticky note-->
                         <div class="sticky">
                             <p>People are clicky l o l </p>
@@ -436,16 +485,6 @@
                       <h2>-Ash Lane</h2>
                   </div>
               <!-- sticky note-->
-            </section>
-            <section class="adviceBig">
-              <!-- sticky note-->
-                        <div class="sticky">
-                            <p>I remember walking into school, freshman year, sometime before midterms and I don’t remember much but I do remember just resting my head on the table and crying in the middle of the downstairs commons amongst my friends. After that day I didn’t attend school for the rest of the year because I was hospitalized for suicidal possibility. After that I didn’t attend school until the following year. at that point I had realized I overdid myself stressing about how much work I was doing, If I was doing enough, to much. Stressing about my grades, my social life. What I’m trying to get at here is that  sometimes you just need to not overthink things, always reach out to a teacher, a friend, family, if needed. That’s what I was lacking, I was always a “I can do it myself” kind of guy, but look where that lead me. If you struggle with mental health issues like I do, then please reach out, it is a real struggle if you go alone.</p>
-                            <h2>-Seth Warner</h2>
-                        </div>
-              <!-- sticky note-->
-            </section>
-            <section class="advice">
               <!-- sticky note-->
                         <div class="sticky">
                             <p>Water ballon toss junior year, kinda sold but it’s chill</p>
@@ -482,6 +521,17 @@
                             <h2>-Anonymous</h2>
                         </div>
               <!-- sticky note-->
+
+            </section>
+            <section class="adviceBig">
+              <!-- sticky note-->
+                        <div class="sticky">
+                            <p>I remember walking into school, freshman year, sometime before midterms and I don’t remember much but I do remember just resting my head on the table and crying in the middle of the downstairs commons amongst my friends. After that day I didn’t attend school for the rest of the year because I was hospitalized for suicidal possibility. After that I didn’t attend school until the following year. at that point I had realized I overdid myself stressing about how much work I was doing, If I was doing enough, to much. Stressing about my grades, my social life. What I’m trying to get at here is that  sometimes you just need to not overthink things, always reach out to a teacher, a friend, family, if needed. That’s what I was lacking, I was always a “I can do it myself” kind of guy, but look where that lead me. If you struggle with mental health issues like I do, then please reach out, it is a real struggle if you go alone.</p>
+                            <h2>-Seth Warner</h2>
+                        </div>
+              <!-- sticky note-->
+            </section>
+            <section class="advice">
               <!-- sticky note-->
                         <div class="sticky">
                             <p>In APUSH towards the end of the year after we finished all the scheduled work, we would sometimes go out on walks.</p>
@@ -495,8 +545,6 @@
                           </div>
                 <!-- sticky note-->
       </section>
-
-
-  </main>
-</body>
+    </main>
+  </body>
 </html>
