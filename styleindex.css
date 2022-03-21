@@ -44,6 +44,7 @@ h3{
     top:0px;
     left:0px;
     z-index: -1;
+
   }
 #navbar ul{
     display: flex;
@@ -83,7 +84,7 @@ h3{
 }
 #home h1{
    color:rgba(252, 240, 20);
-   font-size: 6rem;
+   font-size: 5.5rem;
    width: 100%;
    font-family: 'Poppins', sans-serif;
    font-weight: 800;
@@ -94,12 +95,12 @@ h3{
 #home h2{
    color:white;
    text-decoration-line: overline;
-   text-decoration-thickness: 1.5px;
+   text-decoration-thickness: 2px;
    padding: 0rem;
-   font-size: 2rem;
+   font-size: 2.3rem;
    width: 100%;
    font-family: 'Poppins', sans-serif;
-   font-weight: 10;
+   font-weight: 20;
    text-transform: capitalize;
    text-align: center;
 }
@@ -150,7 +151,7 @@ h3{
     transition: 300ms ease-in;
     transition: 100ms ease-out;
     max-height: 20rem;
-    min-height: 12rem;
+    min-height: 15rem;
     position:relative;
 }
 .sticky:hover {
@@ -184,6 +185,48 @@ h3{
     align-items: center;
     flex-direction: column;
 
+}
+.stickyScroll{
+    width: calc(100% - 3em);
+    display: flex;
+    align-items: center;
+    background-color: #faf570;
+    padding: 1em 2em 4.4em;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+    max-height: 26em;
+    transition: 300ms ease-in;
+    transition: 100ms ease-out;
+    max-height: 60rem;
+    min-height: 15rem;
+    position:relative;
+}
+.adviceScroll{
+    width: 90%;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2em 0em;
+    margin: 3em 1em;
+    place-items: center;
+}
+.adviceScroll p{
+  padding-top: 1em;
+  font-family: Patrick Hand;
+  font-size: 2em;
+  overflow-x: auto;
+  text-align: left;
+}
+.adviceScroll h2{
+  font-size: 1.4em;
+  color:#617178;
+  float: right;
+  text-align: right;
+  position:absolute;
+  bottom:0;
+  right:0;
+  padding-right: 40px;
 }
 #about {
     text-align: center;
@@ -222,6 +265,27 @@ h3{
     cursor: pointer;
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
+.scroll{
+  background-color: white;
+  border-radius: 100% 100%;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 8rem;
+  margin-left: 73rem;
+  margin-bottom: -10rem;
+  height: 100%;
+  width: 5%;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, .3));
+}
+
+.scroll a{
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+
+}
 
   /* Dropdown Button */
   .dropbtn {
@@ -236,7 +300,7 @@ h3{
     transition: all 200ms ease;
     position: fixed;
     margin-top: 102.5px;
-    z-index:1;
+    z-index:1000;
   }
 
   /* The container <div> - needed to position the dropdown content */
@@ -244,7 +308,7 @@ h3{
     position: relative;
     display: inline-block;
     padding-left: 40px;
-    z-index: 50px;
+    z-index: 5;
   }
 
   /* Dropdown Content (Hidden by Default) */
@@ -257,7 +321,8 @@ h3{
     z-index: 1;
     margin-top: 150px;
     position: fixed;
-    z-index: 50px;
+    z-index: 10990;
+
   }
 
   /* Links inside the dropdown */
@@ -280,35 +345,48 @@ h3{
       scroll-margin-top: 100px;
   }
 
-@media only screen and (376px){
-  *{
-      padding:0px;
-      margin: 0px;
-      width: 10vh;
+  @media only screen and (max-device-width: 600px) {
+      #navbar{
+          height:12rem;
+        }
+      #navbar ul li{
+          cursor: pointer;
+          padding:25px;
+          position: relative;
+          left:60px;
+          color:white;
+          list-style: none;
+          font-size: 2.3rem;
+      }
+      #navbar ul li a{
+          color:white;
+          display: block;
+          text-decoration: none;
+          padding: 2px 20px;
+          border-radius: 20px;
+          text-decoration: none;
+          list-style: none;
+      }
+      .dropbtn {
+        margin-top: 11.42rem;
+        transform: scale(1.3);
+      }
+      .dropdown-content {
+        margin-top: 17rem;
+        transform: scale(1.3);
+
+      }
+      .scroll{
+        margin-top: 10rem;
+
+      }
+      .scroll{
+        margin-left: 45rem;
+        margin-top: 12rem;
+        margin-bottom: -23rem;
+        width: 7%;
+      }
+      #home h1{
+        padding-top: 2rem;
+      }
     }
-    #navbar ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 200px;
-      background-color: #f1f1f1;
-    }
-    #navbar ul a{
-      display: block;
-      color: #000;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
-    #navbar li a:hover {
-      background-color: #555;
-      color: white;
-  }
-  #home h1{
-     color:rgba(252, 240, 20);
-     font-size: 6rem;
-     font-family: 'Poppins', sans-serif;
-     font-weight: 800;
-     text-shadow: 3px 3px 0px rgba(248, 165, 32);
-     text-transform: capitalize;
-     text-align: center;
-  }
