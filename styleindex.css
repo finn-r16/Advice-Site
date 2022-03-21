@@ -150,7 +150,7 @@ h3{
     transition: 300ms ease-in;
     transition: 100ms ease-out;
     max-height: 20rem;
-    min-height: 15rem;
+    min-height: 12rem;
     position:relative;
 }
 .sticky:hover {
