@@ -271,9 +271,9 @@ h3{
   display: block;
   text-align: center;
   padding: 1rem;
-  margin-top: 8rem;
-  margin-left: 73rem;
-  margin-bottom: -10rem;
+  margin-top: 7rem;
+  margin-left: 81rem;
+  margin-bottom: -12rem;
   height: 100%;
   width: 5%;
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, .3));
@@ -381,18 +381,14 @@ h3{
 
       }
       .scroll{
-        margin-left: 45rem;
+        margin-left: 52rem;
         margin-top: 12rem;
-        margin-bottom: -23rem;
         width: 7%;
       }
-      #home h1{
-        padding-top: 2rem;
-      }
       h2{
-        padding-top: 10rem;
+        padding-top:
       }
-      #about h1{
+      #home h1{
         padding-top: 2rem;
       }
     }
