@@ -157,7 +157,7 @@ h3{
 .sticky:hover {
   z-index: 2;
   transform: scale(1.45);
-  transition-delay: 400ms;
+  transition-delay: 800ms;
 }
 .advice p{
   padding-top: 1em;
