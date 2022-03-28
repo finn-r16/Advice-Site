@@ -21,7 +21,9 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-
+  function makeItBig(){
+    document.getElementByClass("sticky").classList.add('enlarge');
+}
   // When the user scrolls the page, execute myFunction
   window.onscroll = function() {myFunction()};
 
