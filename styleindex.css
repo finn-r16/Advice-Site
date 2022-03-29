@@ -439,5 +439,12 @@ h3{
       #topSpace{
         margin-bottom: 6rem;
       }
+            .adviceScroll h2{
+        font-size: 1.3rem;
+      }
+      .adviceScroll p{
+        font-size: 1.8rem;
+        padding-top: 4px;
+      }
 
     }
