@@ -27,6 +27,11 @@ h3{
   font-size: 150%;
 
 }
+#small h1{
+  font-size: 3.4rem;
+
+
+}
 #navbar{
     overflow: hidden;
     display:flex;
@@ -114,6 +119,7 @@ h3{
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
 }
+
 /* utility classes */
 .button{
   display: flex;
@@ -220,7 +226,7 @@ h3{
   text-align: left;
 }
 .adviceScroll h2{
-  font-size: 1.4em;
+  font-size: 1.1em;
   color:#617178;
   float: right;
   text-align: right;
@@ -441,7 +447,7 @@ h3{
         margin-bottom: 6rem;
       }
             .adviceScroll h2{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
       .adviceScroll p{
         font-size: 1.8rem;
